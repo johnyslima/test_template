@@ -614,17 +614,23 @@ body {
     height: 100%; }
   .navbar .nav-item {
     position: relative;
-    padding-right: 2rem;
+    padding-right: 1rem;
     padding-left: 1rem;
     padding-top: 0.5rem; }
+    .navbar .nav-item .dropdown-item:hover {
+      color: #fff;
+      background-color: #2888b4; }
     .navbar .nav-item .nav-link {
       color: #ffffffbf; }
-    .navbar .nav-item a:hover {
-      color: #fff !important; }
+      .navbar .nav-item .nav-link:hover {
+        color: #fff;
+        border-bottom: 5px solid #8DC540;
+        height: 100%; }
     .navbar .nav-item .bell {
       font-size: 20px; }
-    .navbar .nav-item:hover {
-      border-bottom: 5px solid #8DC540; }
+    .navbar .nav-item .bell:hover {
+      cursor: pointer;
+      color: #ffffffbf; }
   .navbar .container-fluid {
     padding: 0px; }
   .navbar .container-fluid, .navbar .navbar-brand,
@@ -650,15 +656,13 @@ body {
       transition: width 0.4s ease-in-out; }
     .navbar .search-form input[type=text] {
       margin-left: 6px;
-      width: 130px;
+      width: 90%;
       border: 2px solid #ccc0;
       padding: 12px 20px 12px 10px;
       -webkit-transition: width 0.4s ease-in-out;
       -o-transition: width 0.4s ease-in-out;
       transition: width 0.4s ease-in-out; }
-    .navbar .search-form input[type=text]:hover {
-      width: 85%; }
-    .navbar .search-form form:hover {
+    .navbar .search-form form:focus-within {
       width: 75%; }
     .navbar .search-form .arrow-box {
       height: 100%;

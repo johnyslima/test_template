@@ -5,6 +5,8 @@
 <head>
 
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <title>Gulp Starter Template</title>
 
@@ -42,11 +44,13 @@
                             <a class="navbar-brand" href="#"><img src="images/Fill 1.svg" alt=""></a>
                         </div>
 
-                        <form class="form-inline my-2 my-lg-0">
-                            <div class="img-search">
-                                <img src="images/search.png" alt="">
-                            </div>
-                            <input class="mr-sm-2" type="text" name="search" placeholder="Поиск">
+                        <div class="img-search pt-3">
+                            <img src="images/search.png" alt="">
+                        </div>
+
+                        <form class="form-inline my-2 my-lg-0" tabindex="0">
+                            
+                            <input class="mr-sm-2 search-form__input" type="text" name="search" placeholder="Поиск">
                         </form>
 
                         <div class="arrow-box"></div>
@@ -80,7 +84,8 @@
                     </div>
                 </div>
 
-                <a href="/" class="navbar-brand mx-auto d-block text-center order-0 order-md-1 w-25"
+                <div class="bd-highlight w-25">
+                <a href="/" class="navbar-brand mx-auto d-block text-center order-0 order-md-1"
                     data-target="#exampleModal" data-toggle="modal">
 
                     <svg width="42" height="42" viewBox="0 0 42 42" class="add_btn" xmlns="http://www.w3.org/2000/svg">
@@ -90,6 +95,7 @@
                     </svg>
 
                 </a>
+            </div>
                 
                 <div class="navbar-collapse collapse dual-nav w-50 order-2">
                     <ul class="nav navbar-nav ml-auto">
@@ -99,7 +105,7 @@
                                 <div class="notification-bell">2</div></div>
                         </li>
 
-                        <li class="nav-item dropdown ml-2">
+                        <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <img src="images/building.svg" class="mr-2"></img>

@@ -1,6 +1,4 @@
 @import 'media';
-@import 'circle/mixins';
-@import 'circle/variables';
 @import 'circle/circle';
 @import 'fonts';
 
@@ -56,24 +54,32 @@ body {
 
 	.nav-item {
 		position: relative;
-		padding-right: 2rem;
+		padding-right: 1rem;
 		padding-left: 1rem;
 		padding-top: 0.5rem;
-		
-		.nav-link {
-			color:#ffffffbf;
+
+		.dropdown-item:hover {
+			color: #fff;
+    		background-color: #2888b4;
 		}
 
-		a:hover {
-			color:#fff !important;
+		.nav-link {
+			color:#ffffffbf;
+			&:hover {
+				color:#fff;
+				border-bottom: 5px solid #8DC540;
+				height: 100%;
+			}
 		}
+		
+		
 
 		.bell {
 			font-size: 20px;
 		}
-
-		&:hover {
-			border-bottom: 5px solid #8DC540;
+		.bell:hover {
+			cursor: pointer;
+			color:#ffffffbf;
 		}
 	}
 
@@ -84,6 +90,7 @@ body {
 	.navbar-collapse, .search-form {
 		height: 100%;
 	}
+	
 	
 	.search-form {
 		display: flex;
@@ -110,18 +117,14 @@ body {
 
 		input[type=text] {
 			margin-left: 6px;
-			width: 130px;			
+			width: 90%;		
 			border: 2px solid #ccc0;
 			padding: 12px 20px 12px 10px;
 			-webkit-transition: width 0.4s ease-in-out;
 			transition: width 0.4s ease-in-out;
 		  }
-		  
-		  input[type=text]:hover {
-			width: 85%;
-		  }
 
-		  form:hover {
+		  form:focus-within {
 			width: 75%;
 		  }
 
