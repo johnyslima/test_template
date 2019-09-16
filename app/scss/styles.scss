@@ -1,6 +1,7 @@
 @import 'media';
 @import 'circle/circle';
 @import 'fonts';
+@import 'variables';
 
 
 body {
@@ -67,7 +68,7 @@ body {
 			color:rgba(255, 255, 255, 0.75);
 			&:hover {
 				color:white;
-				border-bottom: 5px solid #8DC540;
+				border-bottom: 5px solid $primary-color-green;
 				height: 100%;
 			}
 		}
@@ -194,7 +195,7 @@ body {
 }
 
 .payment__status {
-	background-color: #81C624;
+	background-color: $primary-color-green;
 	color: #fff;
 	width: 175px;
 	font-size: 12px;
@@ -310,7 +311,7 @@ body {
     line-height: 17px;
     margin: 0px 0.6em 0.1em 0;
     text-align: center;
-    background: #81C624;
+    background: $primary-color-green;
   }
   
 
