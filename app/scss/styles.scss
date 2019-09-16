@@ -36,7 +36,7 @@ body {
 		fill: #fff;
 	}
 	path:hover {
-		fill:#ffffff88;
+		fill: rgba(255, 255, 255, 0.50);
 	}
 }
 
@@ -59,19 +59,18 @@ body {
 		padding-top: 0.5rem;
 
 		.dropdown-item:hover {
-			color: #fff;
+			color: white;
     		background-color: #2888b4;
 		}
 
 		.nav-link {
-			color:#ffffffbf;
+			color:rgba(255, 255, 255, 0.75);
 			&:hover {
-				color:#fff;
+				color:white;
 				border-bottom: 5px solid #8DC540;
 				height: 100%;
 			}
 		}
-		
 		
 
 		.bell {
@@ -111,6 +110,8 @@ body {
 		}
 		form {
 			width: 55%;
+			-ms-transition: width 0.4s ease-in-out;
+			-moz-transition: width 0.4s ease-in-out;
 			-webkit-transition: width 0.4s ease-in-out;
 			transition: width 0.4s ease-in-out;
 		}
@@ -118,8 +119,10 @@ body {
 		input[type=text] {
 			margin-left: 6px;
 			width: 90%;		
-			border: 2px solid #ccc0;
+			border: 2px solid rgba(204, 204, 204, 0);
 			padding: 12px 20px 12px 10px;
+			-ms-transition: width 0.4s ease-in-out;
+			-moz-transition: width 0.4s ease-in-out;
 			-webkit-transition: width 0.4s ease-in-out;
 			transition: width 0.4s ease-in-out;
 		  }
@@ -128,10 +131,18 @@ body {
 			width: 75%;
 		  }
 
+		  @supports (-ms-ime-align: auto) {
+			form>input:focus {
+				width: 100%;
+			}
+			form:hover {
+				width: 100%;
+			}
+		  }
+
 		  .arrow-box {
 			height: 100%;
 			position: relative;
-			transition: width 0.4s ease-in-out;
 		  }
 		
 		.arrow-box:before {
@@ -144,7 +155,6 @@ body {
 			border-style: solid;
 			border-width: 30px 0 30px 10px;
 			border-color: transparent transparent transparent #fff;
-			transition: width 0.4s ease-in-out;
 		}
 
 		  
