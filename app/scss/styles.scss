@@ -49,6 +49,10 @@ body {
 	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.159392);
 	padding: 0px !important;
 
+	.navbar-collapse {
+		flex-grow: 0.2;
+	}
+
 	.navbar-nav {
 		height:100%;
 	}
@@ -93,8 +97,10 @@ body {
 	
 	
 	.search-form {
-		display: flex;
-		width: 100%;
+		//display: flex;
+		display: -webkit-box;
+		width: 15%;
+		z-index: 1000;
 
 		.logo, .img-search, form {
 			background-color: #fff;
@@ -129,7 +135,7 @@ body {
 		  }
 
 		  form:focus-within {
-			width: 75%;
+			width: 150%;
 		  }
 
 		  @supports (-ms-ime-align: auto) {
@@ -367,7 +373,7 @@ body {
 
 .modal.right .modal-body {
 	padding: 40px 15px;
-	height: 680px;
+	height: 580px;
     overflow-y: auto;
 }
 

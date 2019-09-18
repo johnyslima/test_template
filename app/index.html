@@ -33,58 +33,56 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-md justify-content-between">
-            <div class="container-fluid">
+        <nav class="navbar navbar-expand-md d-flex">
+            <div class="search-form">
 
-                <div class="navbar-collapse collapse dual-nav w-50 order-1 order-md-0">
-
-                    <div class="search-form">
-
-                        <div class="logo p-3">
-                            <a href="#"><img src="images/Fill 1.svg" alt=""></a>
-                        </div>
-
-                        <div class="img-search pt-3">
-                            <img src="images/search.png" alt="">
-                        </div>
-
-                        <form class="form-inline my-2 my-lg-0" tabindex="0">
-                            
-                            <input class="mr-sm-2 search-form__input" type="text" name="search" placeholder="Поиск">
-                        </form>
-
-                        <div class="arrow-box"></div>
-                    </div>
-
-                    <div class="navbar-nav">
-
-                        <div class="nav-item">
-                            <a class="nav-link pl-0" href="#">ДЕНЬГИ</a>
-                        </div>
-
-                        <div class="nav-item">
-                            <a class="nav-link" href="#">КОНТАКТЫ</a>
-                        </div>
-                        
-                        <div class="nav-item dropdown">
-
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                УСЛУГИ
-                            </a>
-
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Услуга 1</a>
-                                <a class="dropdown-item" href="#">Услуга 2</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Услуга 3</a>
-                            </div>
-
-                        </div>
-                    </div>
+                <div class="logo p-3">
+                    <a href="#"><img src="images/Fill 1.svg" alt=""></a>
                 </div>
 
-                <div class="bd-highlight w-25">
+                <div class="img-search pt-3">
+                    <img src="images/search.png" alt="">
+                </div>
+
+                <form class="form-inline my-lg-0" tabindex="0">
+
+                    <input class="mr-sm-2 search-form__input" type="text" name="search" placeholder="Поиск">
+                </form>
+
+                <div class="arrow-box"></div>
+            </div>
+
+            <div class="navbar-collapse ml-3">
+
+                <div class="navbar-nav">
+
+                    <div class="nav-item">
+                        <a class="nav-link pl-0" href="#">ДЕНЬГИ</a>
+                    </div>
+
+                    <div class="nav-item">
+                        <a class="nav-link" href="#">КОНТАКТЫ</a>
+                    </div>
+
+                    <div class="nav-item dropdown">
+
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            УСЛУГИ
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Услуга 1</a>
+                            <a class="dropdown-item" href="#">Услуга 2</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Услуга 3</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex-fill">
                 <a href="/" class="navbar-brand mx-auto d-block text-center order-0 order-md-1"
                     data-target="#exampleModal" data-toggle="modal">
 
@@ -96,13 +94,14 @@
 
                 </a>
             </div>
-                
-                <div class="navbar-collapse collapse dual-nav w-50 order-2">
+
+            <div class="navbar-collapse collapse dual-nav flex-fill">
                     <ul class="nav navbar-nav ml-auto">
 
-                        <li class="nav-item">
+                        <li class="nav-item mr-3">
                             <div class="nav-link bell"><i class="fa fa-bell-o"></i>
-                                <div class="notification-bell">2</div></div>
+                                <div class="notification-bell">2</div>
+                            </div>
                         </li>
 
                         <li class="nav-item dropdown">
@@ -119,7 +118,6 @@
 
                     </ul>
                 </div>
-            </div>
         </nav>
     </header>
 
@@ -278,7 +276,7 @@
                 </div>
 
             </div>
-           
+
         </div>
     </div>
 
