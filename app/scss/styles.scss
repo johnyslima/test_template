@@ -58,10 +58,13 @@ body {
 	}
 
 	.nav-item {
+		font-family: RobotoNormal;
+		font-size: 14px;
+		line-height: 16px;
 		position: relative;
 		padding-right: 1rem;
 		padding-left: 1rem;
-		padding-top: 0.5rem;
+		padding-top: 0.8rem;
 
 		.dropdown-item:hover {
 			color: white;
@@ -189,12 +192,13 @@ body {
 	color: #CF4545; 
 	font-weight: 300;
 	font-family: RobotoNormal;
-	font-size: 3.875rem;
+	font-size: 46px;
 	line-height: 54px;
 }
 
 .payment__current-account {
 	font-family: RobotoThin;
+	font-size:16px;
 	.current-account {
 		font-family: RobotoRegular;
 	}
@@ -210,7 +214,7 @@ body {
 }
 
 .payment-order__company-card, .payment-order__сommission {
-	width: 60%;
+	width: 62%;
 	margin-top: 15px;
 	border-radius: 2px;
 
@@ -225,13 +229,13 @@ body {
 
 		.company__info {
 			font-family: RobotoNormal;
-			font-size: 18px;
+			font-size: 16px;
 		}
 
 		.company__quality {
 			width: 50%;
 			.link {
-				font-size: 11px;
+				font-size: 9px;
 				text-align: center;
 				color:#2773b9;
 				
@@ -249,10 +253,12 @@ body {
 		padding: 20px 30px;
 
 		.commentary {
-			font-family: RobotoMedium;
+			width: 89%;
+			font-family: RobotoNormal;
 			text-align: justify;
-    		font-size: 17px;
-    		line-height: 23px;
+			font-size: 16px;
+			font-weight: bold;
+    		line-height: 20px;
 		}
 	}
 
@@ -260,7 +266,7 @@ body {
 
 .payment-order__сommission {
 	font-family: RobotoNormal;
-	font-size: 14px;
+	font-size: 12px;
 	color:#808080;
 }
 
@@ -304,6 +310,10 @@ body {
 .modal {
 	position: absolute !important;
 
+	.modal-title {
+		font-family: RobotoNormal;
+	}
+
 	.modal-content {
 		border-radius: 0;
 		border: none;
@@ -331,7 +341,7 @@ body {
 		box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.239102), 0px 0px 15px rgba(0, 0, 0, 0.0869282);
 	
 		.modal-footer__btn { 
-			margin:0px 25px;
+			margin:0px 15px;
 			a {
 				color:black;
 				img {
@@ -359,7 +369,7 @@ body {
 .modal.right .modal-dialog {
 	position: fixed;
 	margin: auto;
-	width: 100%;
+	width: 80%;
 	-webkit-transform: translate3d(0%, 0, 0);
 	-ms-transform: translate3d(0%, 0, 0);
 	-o-transform: translate3d(0%, 0, 0);

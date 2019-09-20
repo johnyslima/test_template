@@ -68,7 +68,7 @@
   .c100.big {
     font-size: 240px; }
   .c100.small {
-    font-size: 60px; }
+    font-size: 54px; }
   .c100 > span {
     position: absolute;
     width: 100%;
@@ -622,10 +622,13 @@ body {
   .navbar .navbar-nav {
     height: 100%; }
   .navbar .nav-item {
+    font-family: RobotoNormal;
+    font-size: 14px;
+    line-height: 16px;
     position: relative;
     padding-right: 1rem;
     padding-left: 1rem;
-    padding-top: 0.5rem; }
+    padding-top: 0.8rem; }
     .navbar .nav-item .dropdown-item:hover {
       color: white;
       background-color: #2888b4; }
@@ -709,11 +712,12 @@ body {
   color: #CF4545;
   font-weight: 300;
   font-family: RobotoNormal;
-  font-size: 3.875rem;
+  font-size: 46px;
   line-height: 54px; }
 
 .payment__current-account {
-  font-family: RobotoThin; }
+  font-family: RobotoThin;
+  font-size: 16px; }
   .payment__current-account .current-account {
     font-family: RobotoRegular; }
 
@@ -726,7 +730,7 @@ body {
   padding: 5px 10px 5px 12px; }
 
 .payment-order__company-card, .payment-order__сommission {
-  width: 60%;
+  width: 62%;
   margin-top: 15px;
   border-radius: 2px; }
   .payment-order__company-card .payment-order__company, .payment-order__сommission .payment-order__company {
@@ -738,11 +742,11 @@ body {
       padding-bottom: 15px; }
     .payment-order__company-card .payment-order__company .company__info, .payment-order__сommission .payment-order__company .company__info {
       font-family: RobotoNormal;
-      font-size: 18px; }
+      font-size: 16px; }
     .payment-order__company-card .payment-order__company .company__quality, .payment-order__сommission .payment-order__company .company__quality {
       width: 50%; }
       .payment-order__company-card .payment-order__company .company__quality .link, .payment-order__сommission .payment-order__company .company__quality .link {
-        font-size: 11px;
+        font-size: 9px;
         text-align: center;
         color: #2773b9; }
         .payment-order__company-card .payment-order__company .company__quality .link .term, .payment-order__сommission .payment-order__company .company__quality .link .term {
@@ -754,14 +758,16 @@ body {
     border-radius: 2px;
     padding: 20px 30px; }
     .payment-order__company-card .payment-order__commentary .commentary, .payment-order__сommission .payment-order__commentary .commentary {
-      font-family: RobotoMedium;
+      width: 89%;
+      font-family: RobotoNormal;
       text-align: justify;
-      font-size: 17px;
-      line-height: 23px; }
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 20px; }
 
 .payment-order__сommission {
   font-family: RobotoNormal;
-  font-size: 14px;
+  font-size: 12px;
   color: #808080; }
 
 .angle {
@@ -792,6 +798,8 @@ body {
 
 .modal {
   position: absolute !important; }
+  .modal .modal-title {
+    font-family: RobotoNormal; }
   .modal .modal-content {
     border-radius: 0;
     border: none; }
@@ -814,7 +822,7 @@ body {
     -webkit-box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.239102), 0px 0px 15px rgba(0, 0, 0, 0.0869282);
     box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.239102), 0px 0px 15px rgba(0, 0, 0, 0.0869282); }
     .modal .modal-footer .modal-footer__btn {
-      margin: 0px 25px; }
+      margin: 0px 15px; }
       .modal .modal-footer .modal-footer__btn a {
         color: black; }
         .modal .modal-footer .modal-footer__btn a img {
@@ -835,7 +843,7 @@ body {
 .modal.right .modal-dialog {
   position: fixed;
   margin: auto;
-  width: 100%;
+  width: 80%;
   -webkit-transform: translate3d(0%, 0, 0);
   -ms-transform: translate3d(0%, 0, 0);
   transform: translate3d(0%, 0, 0);
