@@ -12,7 +12,7 @@
     "@fortawesome/fontawesome-free": "^5.10.2",
     "browser-sync": "^2.15.0",
     "del": "^2.2.2",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-autoprefixer": "^4.1.0",
     "gulp-cache": "^0.4.5",
     "gulp-cssnano": "^2.1.2",
